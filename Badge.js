@@ -5,15 +5,9 @@
  * Copyright (c) 2016 react-native-component <moonsunfall@aliyun.com>
  */
 
-import React, {
-    Component,
-    PropTypes,
-} from 'react'
-import {
-    View,
-    Text,
-    StyleSheet,
-} from 'react-native'
+import React, { Component } from 'react'
+import { View, Text, StyleSheet, ViewPropTypes } from 'react-native'
+import PropTypes from 'prop-types'
 
 const styles = StyleSheet.create({
     container: {
@@ -45,7 +39,7 @@ export default class Badge extends Component {
     static propTypes = {
         //borderRadius: PropTypes.number,   //number 18, null 5
         extraPaddingHorizontal: PropTypes.number,
-        style: View.propTypes.style,
+        style: ViewPropTypes.style,
         textStyle: Text.propTypes.style,
         minHeight: PropTypes.number,
         minWidth: PropTypes.number,
